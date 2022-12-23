@@ -1,0 +1,68 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("MM2 script hub V-1.1", "DarkTheme")
+
+
+--Tabs
+local Tab1 = Window:NewTab("Main")
+local Tab2 = Window:NewTab("Credits - Updates")
+
+--Sections
+local Tab1Section1 = Tab1:NewSection("GUIS")
+local Tab1Section2 = Tab1:NewSection("Commands")
+local Tab1Section3 = Tab1:NewSection("Other")
+local Tab2Section4 = Tab2:NewSection("Credits")
+
+
+--Buttons T1 S
+Tab1Section1:NewButton("Owl hub", "Silent aim and ESP.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/CriShoux/OwlHub/master/OwlHub.txt"))();
+end)
+
+Tab1Section1:NewButton("Domain X(KEY SYSTEM)", "Press Y for MM2 script and press K to get rid of Domain X bar.", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/DomainX/main/source',true))()
+end)
+
+Tab1Section1:NewButton("Vynixu MM2", "It's a pretty old GUI but works!", function()
+    loadstring(game:GetObjects("rbxassetid://4001118261")[1].Source)()
+end)
+
+Tab1Section1:NewButton("MM2 GUI", "Kinda basic", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/Drifter0507/GUIS/main/MURDER%20MYSTERY%202", true))();
+end)
+
+
+-- Buttons T1 S2
+Tab1Section2:NewButton("Infinite yield", "One of the best admin commands script.", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+Tab1Section2:NewButton("CMD X", "Another good admin commands", function()
+    
+loadstring(game:HttpGet("https://raw.githubusercontent.com/CMD-X/CMD-X/master/Source", true))()
+end)
+
+--Buttons T1 S3
+Tab1Section3:NewButton("Permanent animation", "Change animation.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/GamingScripter/Animation-Hub/main/Animation%20Gui", true))()
+end)
+
+Tab1Section3:NewButton("Yeet GUI", ":Troll:", function()
+    loadstring(game:HttpGet("https://rawscripts.net/raw/Universal-Script-fe-yeet-gui-trollface-edition-7697"))()
+end)
+
+Tab1Section3:NewButton("Keyboard GUI", "For mobile users", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/advxzivhsjjdhxhsidifvsh/mobkeyboard/main/main.txt", true))()
+end)
+
+
+--Lables
+Tab2Section4:NewLabel("Made by Dummy ")
+Tab2Section4:NewLabel("Script on button is made by the owner itself")
+Tab2Section4:NewLabel("Added keyboard GUI")
+Tab2Section4:NewLabel("More script will be added!")
+Tab2Section4:NewKeybind("KeybindText", "KeybindInfo", Enum.KeyCode.F, function()
+	Library:ToggleUI()
+end)
+
+
+
